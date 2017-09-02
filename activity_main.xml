@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/tubiao"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/tubiao"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您现在的积分是："
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/jifen"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/tubiao"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="温馨提示：玩一次刮刮乐消耗500积分，您有可能抽到按摩椅、U型、优惠券等精美礼品，还有可能获得意想不到的惊喜噢！"
+        android:textColor="#62a0fd"
+        android:textSize="16sp"
+        android:textScaleX="1"
+        android:lineSpacingMultiplier="1.5"
+        android:layout_below="@+id/jifen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView2" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jifen"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="120dp"
+
+        android:id="@+id/relativeLayout">
+
+        <TextView
+
+            android:id="@+id/textView1"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/white"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="24sp" />
+
+        <com.example.guaguale.EraseView
+            android:id="@+id/eraseView1"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:layout_height="100dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/lingjiang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="领取奖励"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:background="#62a0fd"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/reward"
+        android:layout_width="300dp"
+        android:layout_height="220dp"
+        android:background="#80000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:textScaleX="1"
+        android:lineSpacingMultiplier="1.5"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/tubiao"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
